@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4ce5fa5cfed1f7218266f89c29281a3e",
+    "revision": "527d69658f69deaad187a0689b504808",
     "url": "/seven-wonders-duel-scorecard-react/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/seven-wonders-duel-scorecard-react/static/css/2.482555ae.chunk.css"
   },
   {
-    "revision": "b74849f08e8f83001542",
+    "revision": "e3891978b49e60c5b473",
     "url": "/seven-wonders-duel-scorecard-react/static/css/main.063f37e4.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/seven-wonders-duel-scorecard-react/static/js/2.2d717d87.chunk.js"
   },
   {
-    "revision": "b74849f08e8f83001542",
-    "url": "/seven-wonders-duel-scorecard-react/static/js/main.541cbdf5.chunk.js"
+    "revision": "e3891978b49e60c5b473",
+    "url": "/seven-wonders-duel-scorecard-react/static/js/main.f1fdeac4.chunk.js"
   },
   {
     "revision": "3a6414b0d55870686d16",
