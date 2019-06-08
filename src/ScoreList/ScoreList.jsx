@@ -8,23 +8,29 @@ class ScoreList extends React.Component {
     return (
       <div id="scorelist">
 
+        <div className="row input-row" >
+         
+             <label className="col-md col-form-label">
+              <span className="black i-player"></span> Player Name 
+             </label>
+         
+        </div>
+
         {this.props.scoreList.map((item, i) => (
           <div className="row input-row" key={item.title}>
-            <div className="col-md" >{item.title}  <span className={item.cls}></span>  </div>
+
+            <label className="col-md col-form-label">
+            <span className={item.cls}></span> {item.title}
+            </label>
+
           </div>
         ))}
 
-        <div className="row input-row" >
+        <div className="row" >
 
-          <div className="col-md" >Total <span className="i-sigma"></span>
+          <label className="col-md col-form-label"> <span className="i-sigma"></span> Total
+          </label>
 
-          <span className="icon-pyramid"></span>
-
-          
-          <span className="icon-card"></span>
-
-          <span className="icon-shield"></span>
-          </div>
         </div>
       </div>
 

@@ -93,12 +93,15 @@ class ScoreCard extends React.Component {
   render() {
 
     return (
-      <section id="scorecard">
-        <div className="row" >
-          <div className="col-md-4" >Player Name </div>
-          <div className="col-md-4" ><input type="text" /></div>
-          <div className="col-md-4" ><input type="text" /></div>
-        </div>
+      <section id="scorecard" className="form-group " >
+        {/* <div className=" row" >
+          <div className=" col-md" >
+             <label className="col-md col-form-label">Player Name</label>
+          </div>
+
+          <div className="col-md-4" ><input type="text" className="form-control" placeholder="Player 1 Name" /></div>
+          <div className="col-md-4" ><input type="text" className="form-control" placeholder="Player 2 Name" /></div>
+        </div> */}
 
         <div className="row" >
           <div className="col-md-4" >

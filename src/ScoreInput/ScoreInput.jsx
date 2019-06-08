@@ -33,11 +33,17 @@ class ScoreInput extends PureComponent {
     }
     return (
       <section id="scoreinput">
+          <div className="row" >
+        
+
+          <div className="col-md-4" ><input type="text" className="form-control" placeholder="Player 1 Name" /></div>
+          <div className="col-md-4" ><input type="text" className="form-control" placeholder="Player 2 Name" /></div>
+        </div>
 
         {this.props.scoreList.map((item, i) => (
           <div className="row" key={item.title}>
             <div className="col-md" >
-              <input type="number" value={this.state.value}
+              <input type="number"  className="form-control" value={this.state.value}
                 onChange={(e) => this.handleChangeScore(e, item.title)} />
             </div>
 
@@ -46,7 +52,7 @@ class ScoreInput extends PureComponent {
 
         <div className="row" >
           <div className="col-md" >
-            <input type="text" value={this.state.player.totalScore} readOnly="readOnly" />
+            <input type="text" className="form-control" value={this.state.player.totalScore} readOnly="readOnly" />
           </div>
         </div>
       </section>

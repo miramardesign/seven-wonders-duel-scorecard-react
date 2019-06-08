@@ -3,7 +3,7 @@ body {
   background-color: #F8E0BF;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* font-size: calc(10px + 2vmin); */
   color: black;
 }
 
@@ -14,17 +14,22 @@ body {
   content: "\25EE";
 } 
 
+.i-player:after{
+  content: "\2302 \20E4";
+} 
+
+
+
 .i-card:after{
   content: "\1f0a0";
 } 
 
 .i-shield:after{
-  content: "\2694";
+  content: "\26E8";
 } 
 
 .i-chip::after{
   content: "\2B24";
-
 }
 
 .red{
@@ -41,7 +46,6 @@ body {
 .purple{
   color: purple;
 }
-
 
 .green{
   color: green;
