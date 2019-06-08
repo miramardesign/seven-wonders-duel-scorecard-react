@@ -33,31 +33,38 @@ class ScoreCard extends React.Component {
     this.scoreList = [
       {
         title: 'Blue Card',
-        points: 0
+        points: 0,
+        cls: 'blue i-card'
       },
       {
         title: 'Yellow Card',
-        points: 0
+        points: 0,
+        cls: 'yellow i-card'
       },
       {
         title: 'Purple Card',
-        points: 0
+        points: 0,
+        cls: 'purple i-card'
       },
       {
         title: 'Wonders',
-        points: 0
+        points: 0,
+        cls: 'gold i-pyramid'
       },
       {
         title: 'Technology Chips',
-        points: 0
+        points: 0,
+        cls: 'green i-chip'
       },
       {
         title: 'Money',
-        points: 0
+        points: 0,
+        cls: 'gold i-chip'
       },
       {
         title: 'Military Points',
-        points: 0
+        points: 0,
+        cls: 'red i-shield'
       }
 
     ];

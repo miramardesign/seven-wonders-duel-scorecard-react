@@ -6,3 +6,43 @@ body {
   font-size: calc(10px + 2vmin);
   color: black;
 }
+
+.i-sigma:after{
+  content: "\03A3";
+} 
+.i-pyramid:after{
+  content: "\25EE";
+} 
+
+.i-card:after{
+  content: "\1f0a0";
+} 
+
+.i-shield:after{
+  content: "\2694";
+} 
+
+.i-chip::after{
+  content: "\2B24";
+
+}
+
+.red{
+  color: red;
+}
+.blue{
+  color: blue;
+}
+
+.gold{
+  color: gold;
+}
+
+.purple{
+  color: purple;
+}
+
+
+.green{
+  color: green;
+}
