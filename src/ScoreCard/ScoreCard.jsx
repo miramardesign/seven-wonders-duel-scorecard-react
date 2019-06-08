@@ -93,9 +93,8 @@ class ScoreCard extends React.Component {
     return (
       <section id="scorecard" className="form-group " >
 
-
         <div className="row" >
-          <div className="col-md-2" >
+          <div className="col-md-2 offset-md-3" >
             <ScoreList scoreList={this.scoreList}></ScoreList>
           </div>
 
