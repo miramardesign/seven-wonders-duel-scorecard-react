@@ -32,17 +32,17 @@ class ScoreCard extends React.Component {
     //todo add icons and tooltip hints
     this.scoreList = [
       {
-        title: 'Blue Card',
+        title: 'Blue Cards',
         points: 0,
         cls: 'blue i-card'
       },
       {
-        title: 'Yellow Card',
+        title: 'Yellow Cards',
         points: 0,
         cls: 'yellow i-card'
       },
       {
-        title: 'Purple Card',
+        title: 'Purple Cards',
         points: 0,
         cls: 'purple i-card'
       },
@@ -88,30 +88,21 @@ class ScoreCard extends React.Component {
 
   }
 
-
-
   render() {
 
     return (
       <section id="scorecard" className="form-group " >
-        {/* <div className=" row" >
-          <div className=" col-md" >
-             <label className="col-md col-form-label">Player Name</label>
-          </div>
 
-          <div className="col-md-4" ><input type="text" className="form-control" placeholder="Player 1 Name" /></div>
-          <div className="col-md-4" ><input type="text" className="form-control" placeholder="Player 2 Name" /></div>
-        </div> */}
 
         <div className="row" >
-          <div className="col-md-4" >
+          <div className="col-md-2" >
             <ScoreList scoreList={this.scoreList}></ScoreList>
           </div>
 
-          <div className="col-md-4" >
+          <div className="col-md-2" >
             <ScoreInput player={this.state.player1} scoreList={this.scoreList}></ScoreInput>
           </div>
-          <div className="col-md-4" >
+          <div className="col-md-2" >
             <ScoreInput player={this.state.player2} scoreList={this.scoreList}></ScoreInput>
           </div>
 

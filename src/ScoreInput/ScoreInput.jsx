@@ -34,11 +34,10 @@ class ScoreInput extends PureComponent {
     return (
       <section id="scoreinput">
           <div className="row" >
-        
-
-          <div className="col-md-4" ><input type="text" className="form-control" placeholder="Player 1 Name" /></div>
-          <div className="col-md-4" ><input type="text" className="form-control" placeholder="Player 2 Name" /></div>
-        </div>
+            <div className="col-md" >
+               <input type="text" className="form-control" placeholder="Player Name" />
+               </div>
+          </div>
 
         {this.props.scoreList.map((item, i) => (
           <div className="row" key={item.title}>
