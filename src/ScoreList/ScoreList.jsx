@@ -6,11 +6,7 @@ class ScoreList extends React.Component {
     super(props);
 
 
-
-
   }
-
-
 
   render() {
 

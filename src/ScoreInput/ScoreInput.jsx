@@ -32,7 +32,7 @@ class ScoreInput extends PureComponent {
       return <h1>Something went wrong.</h1>;
     }
     return (
-      <section id="scorecard">
+      <section id="scoreinput">
 
         {this.props.scoreList.map((item, i) => (
           <div className="row" key={item.title}>
