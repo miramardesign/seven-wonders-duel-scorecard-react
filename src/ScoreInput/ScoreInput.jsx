@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import PropTypes from 'prop-types';
+import './ScoreInput.scss';
 
 class ScoreInput extends PureComponent {
   constructor(props) {
@@ -10,20 +10,15 @@ class ScoreInput extends PureComponent {
       player: this.props.player
     };
   }
-
   calcTotalScore(player) {
     let scoresArr = Object.values(player.scores);
-    console.log(4444, scoresArr);
     return scoresArr.reduce((a, b) => parseInt(a) + parseInt(b));
   };
 
   handleChangeScore = (event, scoreI) => {
 
     let val = event.target.value;
-
     let player = this.props.player;
-    console.dir(player);
-    // player.scores.push({ [scoreI]: val});
     player.scores[scoreI] = val;
     player.totalScore = this.calcTotalScore(player);
     console.dir(player);
@@ -41,9 +36,8 @@ class ScoreInput extends PureComponent {
 
         {this.props.scoreList.map((item, i) => (
           <div className="row" key={item.title}>
-            {/* <div className="col-md-4" >{item.title}</div> */}
-            <div className="col-md-4" >
-              <input type="text" value={this.state.value}
+            <div className="col-md" >
+              <input type="number" value={this.state.value}
                 onChange={(e) => this.handleChangeScore(e, item.title)} />
             </div>
 
@@ -51,16 +45,13 @@ class ScoreInput extends PureComponent {
         ))}
 
         <div className="row" >
-          {/* <div className="col-md-4" >Total</div> */}
-          <div className="col-md-4" >
+          <div className="col-md" >
             <input type="text" value={this.state.player.totalScore} readOnly="readOnly" />
           </div>
-
         </div>
       </section>
     );
   }
 }
-
 
 export default ScoreInput;
