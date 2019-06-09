@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/seven-wonders-duel-scorecard-react/static/css/main.ae04d460.chunk.css",
-    "main.js": "/seven-wonders-duel-scorecard-react/static/js/main.4482f647.chunk.js",
-    "main.js.map": "/seven-wonders-duel-scorecard-react/static/js/main.4482f647.chunk.js.map",
+    "main.css": "/seven-wonders-duel-scorecard-react/static/css/main.14e24cf4.chunk.css",
+    "main.js": "/seven-wonders-duel-scorecard-react/static/js/main.3706bc57.chunk.js",
+    "main.js.map": "/seven-wonders-duel-scorecard-react/static/js/main.3706bc57.chunk.js.map",
     "runtime~main.js": "/seven-wonders-duel-scorecard-react/static/js/runtime~main.2f0f56e1.js",
     "runtime~main.js.map": "/seven-wonders-duel-scorecard-react/static/js/runtime~main.2f0f56e1.js.map",
     "static/css/2.482555ae.chunk.css": "/seven-wonders-duel-scorecard-react/static/css/2.482555ae.chunk.css",
     "static/js/2.2d717d87.chunk.js": "/seven-wonders-duel-scorecard-react/static/js/2.2d717d87.chunk.js",
     "static/js/2.2d717d87.chunk.js.map": "/seven-wonders-duel-scorecard-react/static/js/2.2d717d87.chunk.js.map",
     "index.html": "/seven-wonders-duel-scorecard-react/index.html",
-    "precache-manifest.ce311ca57ed03f78e60cc425a8ae4ec7.js": "/seven-wonders-duel-scorecard-react/precache-manifest.ce311ca57ed03f78e60cc425a8ae4ec7.js",
+    "precache-manifest.bf360af43f84f3d468997b4a082cf38f.js": "/seven-wonders-duel-scorecard-react/precache-manifest.bf360af43f84f3d468997b4a082cf38f.js",
     "service-worker.js": "/seven-wonders-duel-scorecard-react/service-worker.js",
     "static/css/2.482555ae.chunk.css.map": "/seven-wonders-duel-scorecard-react/static/css/2.482555ae.chunk.css.map",
-    "static/css/main.ae04d460.chunk.css.map": "/seven-wonders-duel-scorecard-react/static/css/main.ae04d460.chunk.css.map"
+    "static/css/main.14e24cf4.chunk.css.map": "/seven-wonders-duel-scorecard-react/static/css/main.14e24cf4.chunk.css.map"
   }
 }

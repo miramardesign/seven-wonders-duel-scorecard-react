@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/seven-wonders-duel-scorecard-react/precache-manifest.ce311ca57ed03f78e60cc425a8ae4ec7.js"
+  "/seven-wonders-duel-scorecard-react/precache-manifest.bf360af43f84f3d468997b4a082cf38f.js"
 );
 
 self.addEventListener('message', (event) => {
