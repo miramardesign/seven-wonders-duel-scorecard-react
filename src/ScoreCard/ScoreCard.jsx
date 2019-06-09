@@ -52,7 +52,7 @@ class ScoreCard extends React.Component {
         cls: 'gold i-pyramid'
       },
       {
-        title: 'Technology Chips',
+        title: 'Tech Chips',
         points: 0,
         cls: 'green i-chip'
       },
@@ -94,14 +94,14 @@ class ScoreCard extends React.Component {
       <section id="scorecard" className="form-group " >
 
         <div className="row" >
-          <div className="col-md-2 offset-md-3" >
+          <div className="col-md-1 offset-md-4" >
             <ScoreList scoreList={this.scoreList}></ScoreList>
           </div>
 
-          <div className="col-md-2" >
+          <div className="col-md-1" >
             <ScoreInput player={this.state.player1} scoreList={this.scoreList}></ScoreInput>
           </div>
-          <div className="col-md-2" >
+          <div className="col-md-1" >
             <ScoreInput player={this.state.player2} scoreList={this.scoreList}></ScoreInput>
           </div>
 
