@@ -29,18 +29,23 @@ class ScoreCard extends React.Component {
       }
     }
 
-    //todo add icons and tooltip hints
-    this.scoreList = [
+    const scoreListInitialState = [
       {
         title: 'Blue Cards',
         points: 0,
         cls: 'blue i-card'
       },
       {
+        title: 'Green Cards',
+        points: 0,
+        cls: 'green i-card'
+      },
+      {
         title: 'Yellow Cards',
         points: 0,
         cls: 'yellow i-card'
-      },
+      },       
+
       {
         title: 'Purple Cards',
         points: 0,
@@ -49,7 +54,7 @@ class ScoreCard extends React.Component {
       {
         title: 'Wonders',
         points: 0,
-        cls: 'gold i-pyramid'
+        cls: 'yellow i-pyramid'
       },
       {
         title: 'Tech Chips',
@@ -59,7 +64,7 @@ class ScoreCard extends React.Component {
       {
         title: 'Money',
         points: 0,
-        cls: 'gold i-chip'
+        cls: 'yellow i-chip'
       },
       {
         title: 'Military Points',
@@ -71,6 +76,7 @@ class ScoreCard extends React.Component {
 
     this.state = {
 
+      scoreList: scoreListInitialState,
       player1:
       {
         name: 'One',
@@ -95,14 +101,13 @@ class ScoreCard extends React.Component {
 
         <div className="row" >
           <div className="col-md-4" >
-            <ScoreList scoreList={this.scoreList}></ScoreList>
-          </div>
-
-          <div className="col-md-4" >
-            <ScoreInput player={this.state.player1} scoreList={this.scoreList}></ScoreInput>
+            <ScoreList scoreList={this.state.scoreList}></ScoreList>
           </div>
           <div className="col-md-4" >
-            <ScoreInput player={this.state.player2} scoreList={this.scoreList}></ScoreInput>
+            <ScoreInput player={this.state.player1} scoreList={this.state.scoreList}></ScoreInput>
+          </div>
+          <div className="col-md-4" >
+            <ScoreInput player={this.state.player2} scoreList={this.state.scoreList}></ScoreInput>
           </div>
 
         </div>

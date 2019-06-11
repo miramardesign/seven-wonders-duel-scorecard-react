@@ -10,6 +10,8 @@ class ScoreInput extends PureComponent {
       player: this.props.player
     };
   }
+
+  
   calcTotalScore(player) {
     let scoresArr = Object.values(player.scores);
     return scoresArr.reduce((a, b) => parseInt(a) + parseInt(b));
@@ -42,7 +44,12 @@ class ScoreInput extends PureComponent {
         {this.props.scoreList.map((item, i) => (
           <div className="row" key={item.title}>
             <div className="col-md" >
-              <input type="number"  className="form-control" value={this.state.value}
+              
+            <label className="col-md col-form-label">
+            {/* <span className={item.cls}></span> */}
+             {/* {item.title} */}
+            </label>
+              <input type="number"  className="form-control-offffff" value={this.state.value}
                 onChange={(e) => this.handleChangeScore(e, item.title)} />
             </div>
 

@@ -32,21 +32,27 @@ body {
 
 .red{
   color: red;
-}
-.blue{
-  color: blue;
+  background-color: #F3CFC2;
 }
 
-.gold{
-  color: gold;
+.blue{
+  color: blue;
+  background-color: #C8EBFC;
+}
+
+.yellow{
+  color: #FFCB05;
+  background-color: #FFFBD7;
 }
 
 .purple{
   color: purple;
+  background-color: #D1D3EB;
 }
 
 .green{
   color: green;
+  background-color: #D9E9D3
 }
 
 div[class="row"] {
