@@ -11,7 +11,6 @@ class ScoreInput extends PureComponent {
     };
   }
 
-  
   calcTotalScore(player) {
     let scoresArr = Object.values(player.scores);
     return scoresArr.reduce((a, b) => parseInt(a) + parseInt(b));
