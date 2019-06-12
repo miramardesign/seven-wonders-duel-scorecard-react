@@ -2,7 +2,7 @@ import React from 'react';
 
 import 'bootstrap/dist/css/bootstrap.css';
 
-import './App.css';
+import './App.scss';
 import ScoreCard from './ScoreCard/ScoreCard';
 
 function App() {

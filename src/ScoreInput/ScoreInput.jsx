@@ -2,21 +2,19 @@ import React, { PureComponent, useCallback, useEffect, useState } from "react";
 import "./ScoreInput.scss";
 
 const ScoreInput = ({ currentPlayer, onUpdatePoints }) => {
-  // const calcTotalScore = (player) => {
-  //   let scoresArr = Object.values(player.scores);
-  //   return scoresArr.reduce((a, b) => parseInt(a) + parseInt(b));
-  // };
 
   const [ player, setPlayer] = useState(currentPlayer);
 
   useEffect(() => {
+    console.log(999999);
     setPlayer(currentPlayer)
   }, [currentPlayer]);
 
   const handleChange = (e, item) => {
+    console.log(1414141414);
     const newPlayer = currentPlayer;
     newPlayer.scores.map(score => 
-      (score.title === item.title) ? score.points = +e.target.value : score.points
+      (score.title === item.title) ? score.points = +e.target.value : +score.points
     );
     console.log(newPlayer,999);
     setPlayer(newPlayer)
@@ -46,7 +44,7 @@ const ScoreInput = ({ currentPlayer, onUpdatePoints }) => {
           />
         </div>
       </div>
-      {player.scores.map(item => (
+      {currentPlayer.scores.map(item => (
         <div className="row" key={item.title}>
           <div className="col-md">
             {/* <label className="col-md col-form-label">
@@ -64,7 +62,7 @@ const ScoreInput = ({ currentPlayer, onUpdatePoints }) => {
 {/* value={item.points} */}
             <input
               type="number"
-              className=""
+              className="form-control"
               value={item.points}
               onChange={e => handleChange(e, item)}
             />
