@@ -1,37 +1,30 @@
-import React, { PureComponent, useCallback, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./ScoreInput.scss";
 
 const ScoreInput = ({ currentPlayer, onUpdatePoints }) => {
 
-  const [ player, setPlayer] = useState(currentPlayer);
+  const [ player, setPlayer] = useState({...currentPlayer});
 
-  useEffect(() => {
-    console.log(999999);
-    setPlayer(currentPlayer)
-  }, [currentPlayer]);
+  // useEffect(() => {
+  //   console.log(999999);
+  //   setPlayer(currentPlayer)
+  // }, [currentPlayer]);
 
   const handleChange = (e, item) => {
+    const val = +e.target.value;
     console.log(1414141414);
-    const newPlayer = currentPlayer;
+    console.log(currentPlayer === player, 155555555);
+    const newPlayer = player;
     newPlayer.scores.map(score => 
-      (score.title === item.title) ? score.points = +e.target.value : +score.points
+      (score.title === item.title) ? score.points = val : +score.points
     );
-    console.log(newPlayer,999);
+    // newPlayer.scores[1].points = +e.target.value;
+
+    console.log(newPlayer,19191919);
     setPlayer(newPlayer)
+    console.log(currentPlayer, 21111111111111111111111111);
     onUpdatePoints(newPlayer);
   };
-
-  // handleChangeScore = (event, scoreI) => {
-
-  //   let val = event.target.value;
-  //   let player = this.props.player;
-  //   player.scores[scoreI] = val;
-  //   player.totalScore = this.calcTotalScore(player);
-  //   console.dir(player);
-  //   this.setState({ player: player });
-  //   this.forceUpdate();
-
-  // }
 
   return (
     <section id="scoreinput">
@@ -44,22 +37,16 @@ const ScoreInput = ({ currentPlayer, onUpdatePoints }) => {
           />
         </div>
       </div>
-      {currentPlayer.scores.map(item => (
+      {player.name},
+      {player.id}
+      {player.scores.map(item => (
         <div className="row" key={item.title}>
           <div className="col-md">
             {/* <label className="col-md col-form-label">
               <span className={item.cls}></span>
               {item.title}
             </label> */}
-            {/* <input
-              type="number"
-              className=""
-              value={this.state.value}
-              onChange={e => this.handleChangeScore(e, item.title)}
-            />
-            */}
-
-{/* value={item.points} */}
+ 
             <input
               type="number"
               className="form-control"
