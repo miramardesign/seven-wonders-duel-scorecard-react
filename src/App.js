@@ -7,10 +7,8 @@ import ScoreCard from './ScoreCard/ScoreCard';
 
 function App() {
 
-
   return (
     <div className="App container">
-
 
       <header className="App-header">
         <h1>Seven Wonders Duel Scorecard </h1>
